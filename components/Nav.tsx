@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Nav() {
     return (
-        <div className="w-full flex justify-between items-center">
+        <div className="px-12 mt-6 w-full flex justify-between items-center">
             <div className="flex gap-12 items-center">
                 <Image
                     src="/images/logo.png"

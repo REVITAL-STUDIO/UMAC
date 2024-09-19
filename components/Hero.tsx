@@ -2,9 +2,8 @@ import Nav from "./Nav";
 
 export default function Hero() {
     return (
-        <div className="px-12 py-6">
-            <Nav />
-            <section className="flex flex-col">
+        <div className="px-12">
+            <section className="flex flex-col ">
                 <div className="relative bg-[url('/images/hero.png')] w-full h-[35rem] bg-cover bg-center rounded-[1.3rem] my-10">
                     <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent rounded-[1.3rem]"></div>
 
