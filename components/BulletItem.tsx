@@ -1,4 +1,3 @@
-import React from "react";
 interface BulletItemProps {
     header: string;
     text: string;

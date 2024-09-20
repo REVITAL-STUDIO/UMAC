@@ -80,6 +80,68 @@ export default function Products() {
                     </div>
                 </div>
             </section>
+            <section className="my-[10rem] px-12">
+                <h1 className="text-5xl font-semibold mb-4">Redefining The Industry</h1>
+                <div className="flex gap-[3rem] justify-between">
+                    <p className="text-lg w-[50%]">
+                        Our Company provides you with the tools and products needed to enhance patient care and streamline medical processes.
+                    </p>
+                    <div className="flex flex-col gap-6 text-3xl relative top-[3rem] right-[3rem]">
+                        <p>Gloves</p>
+                        <p>Testing Kits</p>
+                        <p>Wound Care</p>
+                        <p>Ancillary Supplies</p>
+                    </div>
+                </div>
+            </section>
+            <section className="flex gap-12 my-[10rem] items-center px-12">
+                <h2 className="font-semibold text-4xl">Solutions You Can Rely On</h2>
+                <div className="flex flex-col gap-6 w-[25%]">
+                    <Image
+                        src="/images/solutions-1.png"
+                        width={350}
+                        height={350}
+                        alt=""
+                        className="rounded-[1rem]"
+                    />
+                    <h3 className="font-bold text-2xl">Create A Unified Community</h3>
+                    <p>
+                        With mParticle, HBO Max's marketing team is able to create audiences without engineering support and engage with their users more strategically.
+                    </p>
+                </div>
+                <div className="flex flex-col gap-6 w-[25%]">
+                    <Image
+                        src="/images/solutions-2.png"
+                        width={350}
+                        height={350}
+                        alt=""
+                        className="rounded-[1rem]"
+                    />
+                    <h3 className="font-bold text-2xl">Acquisition Cost Lowered</h3>
+                    <p>
+                        With mParticle, HBO Max's marketing team is able to create audiences without engineering support and engage with their users more strategically.
+                    </p>
+                </div>
+                <div className="flex flex-col gap-6 w-[25%]">
+                    <Image
+                        src="/images/solutions-1.png"
+                        width={350}
+                        height={350}
+                        alt=""
+                        className="rounded-[1rem]"
+                    />
+                    <h3 className="font-bold text-2xl">Enhance Operational Efficiencies</h3>
+                    <p>
+                        With mParticle, HBO Max's marketing team is able to create audiences without engineering support and engage with their users more strategically.
+                    </p>
+                </div>
+            </section>
+            <section className="relative bg-[url('/images/products-footer.png')] w-full h-[700px] overflow-hidden mx-auto flex flex-col justify-center px-4  bg-cover items-end pr-8">
+                <div className="text-white">
+                    <h2 className="font-bold text-3xl">One Company, One Goal:</h2>
+                    <p className="text-lg">Empowering businesses through innovative products and tailored solutions.</p>
+                </div>
+            </section>
         </main>
 
     )
