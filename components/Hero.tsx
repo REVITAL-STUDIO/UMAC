@@ -1,26 +1,35 @@
-import Nav from "./Nav";
+import React from "react";
+import Image from "next/image";
 
 export default function Hero() {
-    return (
-        <div className="px-12">
-            <section className="flex flex-col ">
-                <div className="relative bg-[url('/images/hero.png')] w-full h-[35rem] bg-cover bg-center rounded-[1.3rem] my-10">
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent rounded-[1.3rem]"></div>
-
-                    <div className="absolute left-[5%] bottom-[30%]">
-                        <h1 className="text-white text-[2.5rem] w-[60%] font-bold mb-2">Delivering High-End Diagnostics and Medical Solutions for Better Healthcare</h1>
-                        <p className="text-white text-md font-thin tracking-[0.09rem]">At UMA, we leverage cutting-edge technology and strategic partnerships to improve patient outcomes.</p>
-                    </div>
-                </div>
-                <div className="flex justify-start gap-8">
-                    <button className="bg-[#530099] text-white rounded-[20px] text-xl px-12 py-4">
-                        About Us
-                    </button>
-                    <button className="bg-[#ffffff] text-black border-[1px] border-black rounded-[20px] text-xl px-12 py-4">
-                        Schedule Consultation
-                    </button>
-                </div>
-            </section>
+  return (
+    <div className="w-full min-h-screen flex items-center justify-center">
+      <section className="flex flex-col w-full p-4">
+        <div className="relative bg-[url('/images/hero.png')] w-full h-[700px] overflow-hidden mx-auto flex flex-col justify-center px-4  bg-cover bg-center rounded-[1.3rem] ">
+          <Image
+            src="/images/hero.png"
+            alt="hero"
+            fill
+            className="absolute inset-0 w-[100%] h-[100%] -z-10"
+          />
+          <h1 className="text-white text-4xl w-[50%] mb-2">
+            Delivering High-End Diagnostics and Medical Solutions for Better
+            Healthcare
+          </h1>
+          <p className="text-white text-lg font-thin ">
+            At UMA, we leverage cutting-edge technology and strategic
+            partnerships to improve patient outcomes.
+          </p>
         </div>
-    );
+        <div className="flex gap-x-6 my-[2%]">
+          <button className="bg-[#530099] text-white rounded-lg text-base shadow-lg p-4">
+            About Us
+          </button>
+          <button className="bg-[#ffffff] text-black  border rounded-lg text-base shadow-lg p-4">
+            Schedule Consultation
+          </button>
+        </div>
+      </section>
+    </div>
+  );
 }
