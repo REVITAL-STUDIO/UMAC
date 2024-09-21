@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Potential() {
   return (
-    <section className="w-full min-h-screen grid grid-cols-3 grid-row-2 p-4 gap-4">
+    <section className="w-full min-h-screen grid grid-cols-3 grid-row-3 p-4 gap-12">
       <div className=" col-span-2 row-span-1 rounded-lg relative overflow-hidden flex items-center">
-        <span className="text-4xl">
+        <span className="text-2xl w-[75%] p-4">
           Unlocking the Potential of Healthcare Professionals through Strategic
           Partnerships
         </span>
@@ -40,7 +40,7 @@ export default function Potential() {
           </p>
         </div>
       </div>
-      <div className="bg-black col-span-2 row-span-1 rounded-lg relative overflow-hidden">
+      <div className="bg-black col-span-2 row-span-2 rounded-lg relative overflow-hidden">
         <Image
           src="/images/home-pic-2.png"
           alt="medical business"

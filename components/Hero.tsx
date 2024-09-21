@@ -20,14 +20,14 @@ export default function Hero() {
             At UMA, we leverage cutting-edge technology and strategic
             partnerships to improve patient outcomes.
           </p>
-        </div>
-        <div className="flex gap-x-6 my-[2%]">
-          <button className="bg-[#530099] text-white rounded-lg text-base shadow-lg p-4">
-            About Us
-          </button>
-          <button className="bg-[#ffffff] text-black  border rounded-lg text-base shadow-lg p-4">
-            Schedule Consultation
-          </button>
+          <div className="flex gap-x-6 my-[2%]">
+            <button className="bg-[#530099] text-white rounded-lg text-base shadow-lg p-4">
+              About Us
+            </button>
+            <button className="bg-[#ffffff] text-black  border rounded-lg text-base shadow-lg p-4">
+              Schedule Consultation
+            </button>
+          </div>
         </div>
       </section>
     </div>
