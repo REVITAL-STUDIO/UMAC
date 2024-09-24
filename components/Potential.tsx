@@ -29,12 +29,12 @@ export default function Potential() {
           world-class education.
         </span>
       </div>
-      <div className="h-[100%] w-[75%] col-span-2 mx-auto  row-span-2 rounded-lg relative overflow-hidden">
+      <div className="h-[100%] w-[75%] col-span-2 mx-auto  row-span-2 rounded-lg shadow-lg relative overflow-hidden">
         <Image
-          src="/images/pexels-cedric-fauntleroy-4269270.jpg"
+          src="/images/pexels-polina-tankilevitch-5469147.jpg"
           alt="medical business"
           fill
-          className="w-[100%] h-[100%] absolute inset-0 "
+          className="w-[100%] h-[100%] absolute inset-0 object-cover"
         />
       </div>
     </section>

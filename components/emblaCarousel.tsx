@@ -43,12 +43,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide " key={index}>
-              <div className="embla__slide__number mx-auto overflow-hidden relative">
+              <div className="embla__slide__number mx-auto cursor-pointer overflow-hidden  relative ">
                 <Image
                   src={photoGrid[index % photoGrid.length]} // Map images from photoGrid
                   alt={`Slide image ${index + 1}`}
                   fill
-                  className="absolute w-[100%] h-[100%] inset-0"
+                  className="absolute w-[100%] h-[100%] inset-0  object-cover"
                 />{" "}
               </div>
             </div>
