@@ -2,6 +2,7 @@
 import Collaboration from "@/components/Collaboration";
 import Hero from "@/components/Hero";
 import Potential from "@/components/Potential";
+import TrustSlides from "@/components/trustSlides";
 // import Thumbnail from "@/components/Thumbnail";
 // import Image from "next/image";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Collaboration />
       <Potential />
+      <TrustSlides />
 
       {/* <section className="flex gap-2 items-center pl-12 mt-[15rem] mb-[10rem]">
         <h2 className="font-bold text-[1.7rem] w-[30%]">

@@ -10,9 +10,9 @@ export default function ProductGrid() {
       <div className="bg-purple-500 row-span-2 rounded-lg"></div>
       <div className="bg-slate-500 col-span-[1.5] row-span-1 rounded-lg"></div>
       <div className="bg-orange-500 h-[300px] rounded-lg"></div>
-      <div className="col-span-2 rounded-lg flex flex-col justify-center items-end">
-        <h2 className="mt-[4%] text-6xl font-normal">Full Cycle Service</h2>
-      </div>
+      {/* <div className="col-span-2 rounded-lg flex flex-col justify-center items-end">
+        <h2 className="mt-[4%] text-6xl font-semibold">Full Cycle Service</h2>
+      </div> */}
     </section>
   );
 }
