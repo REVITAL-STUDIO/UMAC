@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function ConsultIntro() {
   return (
-    <section className="min-h-screen flex  px-12">
-      <div className="mt-[5%] w-2/5 flex flex-col justify-center">
+    <section className="min-h-screen flex flex-col xl:flex-row  xl:px-12 px-4">
+      <div className="mt-[5%] xl:w-2/5 flex flex-col justify-center">
         <div className="px-4">
           <h1 className="text-5xl font-bold">
             Consulting for Growth and Success
@@ -23,8 +23,8 @@ export default function ConsultIntro() {
           </p>
         </div>
       </div>
-      <section className="w-3/5 flex justify-center items-center px-4">
-        <div className="relative w-[90%] h-[90%] mx-auto overflow-hidden mt-[5%] rounded-lg shadow-lg shadow-[#B68D07]">
+      <section className="xl:w-3/5 w-full xl:h-auto h-[75vh] flex justify-center items-center px-4">
+        <div className="relative xl:w-[90%] w-[100%] h-[90%] mx-auto overflow-hidden mt-[5%] rounded-lg shadow-lg shadow-[#B68D07]">
           <Image
             src="/images/consulting-hero.jpg"
             fill

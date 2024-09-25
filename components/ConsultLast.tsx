@@ -12,10 +12,10 @@ export default function ConsultLast() {
           loop
           muted
         />{" "}
-        <h1 className="xl:text-5xl w-1/2 text-2xl font-semibold z-10">
+        <h1 className="xl:text-5xl xl:w-1/2 text-2xl font-semibold z-10">
           Unlock Your Team's Full Potential with UMA Consulting
         </h1>
-        <h3 className="z-10 mt-[1%] w-1/2 text-lg">
+        <h3 className="z-10 mt-[1%] xl:w-1/2 text-lg">
           Together, we’ll drive growth and empower your team to excel in today’s
           competitive landscape. Let’s work together to take your business to
           new heights.{" "}

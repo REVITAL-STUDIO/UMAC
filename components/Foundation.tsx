@@ -10,8 +10,8 @@ import {
 
 export default function Foundation() {
   return (
-    <section className="  flex justify-center items-center px-32 my-[8%]">
-      <div className=" grid grid-cols-2 grid-rows-2 gap-12">
+    <section className="  flex justify-center items-center xl:px-32 px-8 my-[8%]">
+      <div className=" grid xl:grid-cols-2 xl:grid-rows-2 gap-12">
         <div className="p-4 border rounded-lg">
           <div className="p-4 rounded-full bg-white w-fit mb-4 shadow-md shadow-[#B68D07]">
             <FontAwesomeIcon

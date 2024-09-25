@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Grow() {
   return (
-    <section className="flex justify-between items-center px-16 min-h-screen my-[6%] ">
-      <div className="w-[50%] relative mx-auto overflow-hidden h-[100vh] mt-[5%] rounded-lg shadow-lg shadow-[#B68D07]">
+    <section className="flex flex-col-reverse xl:flex-row justify-between items-center xl:px-16 px-4 min-h-screen my-[6%] ">
+      <div className="xl:w-[50%] w-[100%] relative mx-auto overflow-hidden xl:h-[100vh] h-[75vh] px-4 mt-[5%] rounded-lg shadow-lg shadow-[#B68D07]">
         <Image
           src="/images/consulting-1.png"
           fill
@@ -12,11 +12,11 @@ export default function Grow() {
           className="absolute w-[100%] h-[100%] inset-0"
         />
       </div>
-      <div className="w-[40%] relative">
-        <h1 className="text-6xl font-bold">
+      <div className="xl:w-[40%] relative p-4">
+        <h1 className="text-5xl font-bold">
           The more you grow, the stronger you become.
         </h1>
-        <p className="text-lg text-justify mt-[5%]">
+        <p className="text-lg  mt-[5%]">
           We believe that growth is the foundation of success. The more
           individuals and teams grow, the stronger and more adaptable they
           become in the face of challenges. Our tailored consulting and training
