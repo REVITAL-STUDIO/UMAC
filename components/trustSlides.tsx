@@ -2,8 +2,9 @@ import React from "react";
 import EmblaCarousel from "./emblaCarousel";
 
 function TrustSlides() {
-  const slide = [0, 1, 2, 3];
-
+  const slideIndexes: number[] = [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+  ];
   return (
     <section className="w-full my-8 ">
       <div className="w-full xl:flex justify-between mt-[8%] xl:px-16 px-8">
@@ -13,7 +14,7 @@ function TrustSlides() {
         </h2>
       </div>
       <div className="w-full flex items-center justify-center xl:justify-end mt-[4%]">
-        <EmblaCarousel slides={slide} />
+        <EmblaCarousel slides={slideIndexes} />
       </div>
     </section>
   );
