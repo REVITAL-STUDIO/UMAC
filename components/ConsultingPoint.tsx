@@ -1,12 +1,11 @@
 interface ConsultingPointProps {
-    text: string;
+  text: string;
 }
 
 export default function ConsultingPoint({ text }: ConsultingPointProps) {
-    return (
-        <div className="bg-white text-black rounded-[1.5rem] w-[35rem] h-[6rem] flex justify-center items-center text-lg border-[1px] border-gray-200">
-            {text}
-        </div>
-    );
+  return (
+    <div className=" text-[#B68D07] font-normal text-xl col-span-1 border p-4 py-20 rounded-md gap-4  italic ">
+      {text}
+    </div>
+  );
 }
-
