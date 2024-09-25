@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Solution() {
   return (
-    <section className="flex  my-[10rem] items-center px-12">
-      <h2 className="font-semibold text-2xl w-[25%]">
+    <section className="flex flex-col lg:flex-row  my-[10rem] items-center px-4 lg:px-12">
+      <h2 className="font-semibold text-2xl w-full mb-12 text-center lg:text-left lg:mb-0 lg:w-[25%]">
         Solutions You Can Rely On
       </h2>
-      <div className="w-[75%] flex gap-x-8">
+      <div className="w-full lg:w-[75%] flex flex-col lg:flex-row gap-x-8">
         <div className="flex  flex-col gap-y-6 ">
           <div className="relative mx-auto overflow-hidden w-[100%] h-[500px] rounded-lg">
             <Image
