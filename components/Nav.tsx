@@ -1,13 +1,24 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import MobileMenu from "./MobileMenu";
 
 export default function Nav() {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
+  useEffect(() => {
+    document.body.style.overflow = openMenu ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [openMenu]);
+
+  //Opening Mobile Menu
+  const toggleMenu = () => {
+    setOpenMenu((prev) => !prev);
   };
 
   return (
@@ -20,30 +31,40 @@ export default function Nav() {
         <Link href="/retail">Retail</Link>
         <Link href="/consulting">Consulting</Link>
       </div>
-      <button className="bg-[#530099] text-white rounded-lg text-base shadow-lg px-6 py-3 hidden lg:flex">
-        Get Started
-      </button>
-
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="absolute top-0 left-0 w-full h-screen bg-black text-white flex flex-col items-center justify-center space-y-6">
-          <Link href="/products" onClick={toggleMobileMenu}>
-            Medical Products
-          </Link>
-          <Link href="/retail" onClick={toggleMobileMenu}>
-            Retail
-          </Link>
-          <Link href="/consulting" onClick={toggleMobileMenu}>
-            Consulting
-          </Link>
-          <button
-            onClick={toggleMobileMenu}
-            className="bg-[#530099] text-white rounded-lg text-base shadow-lg px-6 py-3"
-          >
-            Get Started
-          </button>
-        </div>
-      )}
+      <div className="flex gap-x-4">
+        <button className="bg-[#530099] text-white rounded-lg text-base shadow-lg px-6 py-3">
+          Get Started
+        </button>
+        <button
+          onClick={toggleMenu}
+          className={`xl:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full space-x-reverse border-[1.5px] z-50 border-[#00803C] z-30`}
+        >
+          <span
+            className={`block w-1/2 my-0.5 border-[1.5px] border-[#00803C]/75 rounded-full ${
+              openMenu
+                ? "rotate-45 transition-transform duration-300 ease-in-out black-white"
+                : "transition-transform duration-300 ease-in-out"
+            }`}
+          ></span>
+          <span
+            className={`block w-1/4 my-0.5 border-[1.5px] border-[#00803C]/75 rounded-full ${
+              openMenu
+                ? "rotate-45 transition-transform duration-300 ease-in-out hidden"
+                : "transition-transform duration-300 ease-in-out"
+            }`}
+          ></span>
+          <span
+            className={`block ${
+              openMenu ? "w-1/2" : "w-1/6"
+            } my-0.5 border-[1.5px] border-[#00803C]/75 rounded-full ${
+              openMenu
+                ? "-rotate-45 w-1/2 absolute top-2/5 transition-transform duration-300 ease-in-out black-white"
+                : "transition-transform duration-300 ease-in-out "
+            }`}
+          ></span>
+        </button>
+      </div>
+      <AnimatePresence> {openMenu && <MobileMenu />}</AnimatePresence>
     </div>
   );
 }
