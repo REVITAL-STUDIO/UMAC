@@ -142,3 +142,7 @@ body {
   bottom: 0;
   left: -100%;
 }
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
