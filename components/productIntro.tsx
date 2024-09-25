@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function ProductIntro() {
   return (
-    <section className="flex my-[5rem] justify-between">
-      <div className="flex flex-col justify-center w-[50%] px-12">
-        <h1 className="text-8xl font-semibold">Our Products</h1>
+    <section className="flex flex-col lg:flex-row my-[5rem] justify-between">
+      <div className="flex flex-col justify-center w-full lg:w-[50%] px-12">
+        <h1 className="text-6xl lg:text-8xl font-semibold">Our Products</h1>
         <p className="text-base  mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -19,7 +19,7 @@ export default function ProductIntro() {
           Explore Our Products
         </button> */}
       </div>
-      <div className="grid grid-cols-2 grid-rows-2 h-[700px] gap-4 w-[50%] p-4">
+      <div className="grid grid-cols-2 grid-rows-2 h-[700px] gap-4 w-full lg:w-[50%] p-4">
         <div className=" col-span-1 rounded-lg relative mx-auto overflow-hidden border w-full shadow-lg">
           <Image
             src="/images/product-hero-1.jpg"
