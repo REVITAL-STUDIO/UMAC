@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --background: #FFFDEE;
+  --background: #fffdee;
   --foreground: #171717;
 }
 
@@ -113,6 +112,28 @@ body {
   max-width: 100%;
   overflow: hidden;
 }
+
+@media (max-width: 500px) {
+  .embla__progress {
+    width: 10rem;
+  }
+  .embla {
+    --slide-size: 100%;
+    width: 90%;
+
+  }
+}
+@media (max-width: 1000px) {
+  .embla__progress {
+    width: 10rem;
+  }
+  .embla {
+    --slide-size: 100%;
+    width: 90%;
+
+  }
+}
+
 .embla__progress__bar {
   background-color: purple;
   position: absolute;

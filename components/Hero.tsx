@@ -12,12 +12,12 @@ export default function Hero() {
         src="/images/business-video.mp4"
         className="absolute inset-0 w-[100%] h-[100%] object-cover -z-10 brightness-50"
       />
-      <div className="w-full h-3/4 flex flex-col  justify-center px-16">
-        <h1 className="text-white font-semibold text-7xl w-[90%] mb-2">
+      <div className="w-full h-3/4 flex flex-col  justify-center xl:px-16 px-4">
+        <h1 className="text-white font-semibold xl:text-7xl md:text-5xl text-3xl md:w-[90%] mb-2">
           Delivering High-End Diagnostics and Medical Solutions for Better
           Healthcare
         </h1>
-        <p className="text-white text-lg my-[2%] font-light ">
+        <p className="text-white text-lg xl:my-0 my-[2%] md:w-1/2 font-light ">
           At UMA, we leverage cutting-edge technology and strategic partnerships
           to improve patient outcomes.
         </p>

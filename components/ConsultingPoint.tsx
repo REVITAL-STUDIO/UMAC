@@ -4,7 +4,7 @@ interface ConsultingPointProps {
 
 export default function ConsultingPoint({ text }: ConsultingPointProps) {
   return (
-    <div className=" text-[#B68D07] font-normal text-xl col-span-1 border p-4 py-20 rounded-md gap-4  italic ">
+    <div className=" text-[#000]  font-semibold text-2xl  col-span-1 my-8  rounded-md gap-4   ">
       {text}
     </div>
   );

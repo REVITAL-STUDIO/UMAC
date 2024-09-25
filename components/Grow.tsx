@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Grow() {
   return (
-    <section className="flex justify-between items-center px-12 min-h-screen">
+    <section className="flex justify-between items-center px-16 min-h-screen my-[6%] ">
       <div className="w-[50%] relative mx-auto overflow-hidden h-[100vh] mt-[5%] rounded-lg shadow-lg shadow-[#B68D07]">
         <Image
           src="/images/consulting-1.png"
@@ -16,14 +16,16 @@ export default function Grow() {
         <h1 className="text-6xl font-bold">
           The more you grow, the stronger you become.
         </h1>
-        <p className="text-base mt-[5%]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <p className="text-lg text-justify mt-[5%]">
+          We believe that growth is the foundation of success. The more
+          individuals and teams grow, the stronger and more adaptable they
+          become in the face of challenges. Our tailored consulting and training
+          programs are designed to foster that growth, equipping your workforce
+          with the skills and insights needed to excel. Whether through
+          improving communication, enhancing collaboration, or developing
+          leadership abilities, we help your team unlock its full
+          potential—empowering your business to achieve greater strength and
+          success.
         </p>
       </div>
     </section>
