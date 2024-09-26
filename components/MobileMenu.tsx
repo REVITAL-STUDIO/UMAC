@@ -1,7 +1,5 @@
-import React, { FormEvent, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
-import { useRouter, usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const MobileMenu = () => {
   return (

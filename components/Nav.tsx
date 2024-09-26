@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import MobileMenu from "./MobileMenu";
 
 export default function Nav() {

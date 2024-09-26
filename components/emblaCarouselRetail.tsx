@@ -3,7 +3,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import Image from "next/image";
 
 type PropType = {
   slides: number[];
@@ -14,13 +13,6 @@ const EmblaCarouselRetail: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [scrollProgress, setScrollProgress] = useState(0);
-
-  const photoGrid = [
-    "/images/provider-1.jpg",
-    "/images/provider-2.jpg",
-    "/images/provider-3.jpg",
-    "/images/provider-4.jpg",
-  ];
 
   const onScroll = useCallback((emblaApi: EmblaCarouselType) => {
     const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()));
@@ -52,14 +44,14 @@ const EmblaCarouselRetail: React.FC<PropType> = (props) => {
                   Occupation
                 </span>
                 <span className="text-white text-sm font-light mt-4 p-4 text-center">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum."
+                  mollit anim id est laborum.&quot;
                 </span>
               </div>
             </div>

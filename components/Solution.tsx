@@ -19,7 +19,7 @@ export default function Solution() {
           </div>
           <h3 className="font-bold text-2xl">Create A Unified Community</h3>
           <p>
-            With mParticle, HBO Max's marketing team is able to create audiences
+            With mParticle, HBO Max&apos;s marketing team is able to create audiences
             without engineering support and engage with their users more
             strategically.
           </p>
@@ -35,7 +35,7 @@ export default function Solution() {
           </div>
           <h3 className="font-bold text-2xl">Acquisition Cost Lowered</h3>
           <p>
-            With mParticle, HBO Max's marketing team is able to create audiences
+            With mParticle, HBO Max&apos;s marketing team is able to create audiences
             without engineering support and engage with their users more
             strategically.
           </p>
@@ -53,7 +53,7 @@ export default function Solution() {
             Enhance Operational Efficiencies
           </h3>
           <p>
-            With mParticle, HBO Max's marketing team is able to create audiences
+            With mParticle, HBO Max&apos;s marketing team is able to create audiences
             without engineering support and engage with their users more
             strategically.
           </p>

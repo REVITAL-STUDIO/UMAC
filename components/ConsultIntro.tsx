@@ -1,5 +1,4 @@
 import React from "react";
-import ConsultingPoint from "./ConsultingPoint";
 import Image from "next/image";
 
 
