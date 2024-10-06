@@ -6,18 +6,12 @@ export default function ProductIntro() {
     <section className="flex flex-col lg:flex-row my-[5rem] justify-between">
       <div className="flex flex-col justify-center w-full lg:w-[50%] px-12">
         <h1 className="text-6xl lg:text-8xl font-semibold">Our Products</h1>
-        <p className="text-base  mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <p className="text-base mt-4">
+          At UMALLC, we are dedicated to empowering healthcare providers with high-quality medical supplies and innovative solutions. With over 28 years of global retail sales experience, our team understands the critical needs of clinics, hospitals, and healthcare facilities, ensuring we provide products that enhance safety and patient care.
         </p>
-        {/* <button className="bg-[#530099] text-white rounded-lg text-base shadow-lg px-6 py-3 w-fit mt-4">
-          Explore Our Products
-        </button> */}
+        <p className="text-base mt-4">
+          From essential medical equipment to advanced wound care technology, our offerings are designed to support your commitment to delivering exceptional patient care. Partner with us for reliable service, trusted brands, and a comprehensive supply experience that keeps your facility fully equipped for every challenge.
+        </p>
       </div>
       <div className="grid grid-cols-2 grid-rows-2 h-[700px] gap-4 w-full lg:w-[50%] p-4">
         <div className=" col-span-1 rounded-lg relative mx-auto overflow-hidden border w-full shadow-lg">
