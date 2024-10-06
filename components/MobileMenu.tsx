@@ -11,7 +11,7 @@ const MobileMenu = () => {
         duration: 0.5,
         ease: "easeInOut", // Using easeInOut for a smooth transition
       }}
-      className="fixed top-0 left-0 w-full bg-[#530099] p-4 z-40 transition-transform duration-300 ease-in-out h-[100%] xl:hidden"
+      className="fixed top-0 left-0 w-full bg-[#000] p-4 z-30 transition-transform duration-300 ease-in-out h-[100%] xl:hidden"
     >
       <motion.div
         initial={{ x: "100%", opacity: 0 }} // Menu starts hidden above the viewport
@@ -22,7 +22,7 @@ const MobileMenu = () => {
           duration: 0.5,
           ease: "easeInOut", // Using easeInOut for a smooth transition
         }}
-        className="absolute top-0 left-0 h-[100%] w-full text-black items-center  backdrop-blur bg-[#530099] isolate shadow-lg  z-50"
+        className="absolute top-0 left-0 h-[100%] w-full text-black items-center  backdrop-blur bg-[#000] isolate shadow-lg  z-40"
       >
         <ul className="text-2xl tracking-wider font-normal font-alternate-gothic p-4 flex flex-col mt-[30%] text-white gap-y-6  ">
           {/* Shop */}
@@ -62,9 +62,12 @@ const MobileMenu = () => {
             </Link>
           </li>
         </ul>
-        <div className="absolute w-full bottom-56">
-          <button className="mx-auto  absolute  left-1/2 transform -translate-x-1/2 p-4 bg-white rounded-full w-3/4 shadow-xl shadow-slate-50/50">
+        <div className=" w-full flex flex-col gap-y-4 justify-center items-center mt-[20%] p-4">
+          <button className="mx-auto  border text-white  p-4 rounded-md w-full ">
             Contact Us
+          </button>
+          <button className="mx-auto  bg-[#00803C]/50 text-white  p-4 rounded-md w-full ">
+            Get Started
           </button>
         </div>
       </motion.div>

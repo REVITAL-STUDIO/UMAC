@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-oxygen`}>
+      <body className={`font-inconsolata`}>
         {children}
         <Footer />
       </body>

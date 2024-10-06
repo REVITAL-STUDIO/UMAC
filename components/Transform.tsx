@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Transform() {
   return (
-    <section className="min-h-screen  p-4 my-[6%]">
+    <section className="min-h-screen  p-4 my-[4%]">
       <div className="xl:px-44 ">
         <h1 className="font-bold text-5xl  p-4 w-[100%]">
           Innovative Diagnostics

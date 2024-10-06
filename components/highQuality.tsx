@@ -119,7 +119,7 @@ export default function HighQuality() {
               <h3 className="font-semibold text-2xl my-4">
                 {slides[activeSlide].title}
               </h3>
-              <p className="w-[100%] text-justify mt-8 text-base">
+              <p className="w-[100%] text-justify mt-8 text-sm">
                 {slides[activeSlide].content}
               </p>
             </div>
