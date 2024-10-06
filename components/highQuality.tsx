@@ -1,7 +1,51 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Image from "next/image";
 
 export default function HighQuality() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const slides = [
+    {
+      id: 0,
+      title: "Billing & Revenue Management",
+      content: (
+        <>
+          <p className="w-[90%] mt-2">
+            We understand that the medical industry is constantly evolving, and managing the day-to-day operations can be overwhelming. That's why we provide comprehensive solutions that go beyond medical supplies. Our Billing & Revenue Management services help streamline your financial operations, ensuring timely reimbursements and efficient billing processes, allowing you to focus on patient care.
+          </p>
+        </>
+      )
+    },
+    {
+      id: 1,
+      title: "Staffing & Recruiting",
+      content: (
+        <>
+          <p className="w-[90%] mt-2">
+            Whether you're looking for skilled clinicians, administrative staff, or temporary relief for your medical teams, we connect you with qualified professionals to help your practice run smoothly and efficiently. We understand that finding qualified professionals is essential for maintaining the quality of care and smooth operation of your healthcare operations. That's why we carefully vet each candidate to ensure they not only meet the technical qualifications but also align with your organization's values and culture. From short-term coverage to long-term placements, our team is dedicated to connecting you with reliable talent, so your practice can continue to deliver exceptional care without disruption.
+          </p>
+        </>
+      )
+    },
+    {
+      id: 2,
+      title: "Retail Solutions",
+      content: (
+        <>
+          <p className="w-[90%] mt-2">
+            In addition to our medical supply services, we extend our offerings to the retail sector, providing an array of durable goods and consumables tailored to healthcare facilities.
+          </p>
+          <ul className="list-disc ml-5 mt-2 w-[90%]">
+            <li><strong>Food & Drinks</strong> – Keep your staff and patients refreshed with a variety of options.</li>
+            <li><strong>Vending Machines</strong> – Offering on-site convenience and seamless access to essentials.</li>
+            <li><strong>Supplements & Nutraceuticals</strong> – Carefully selected to support patient wellness and recovery.</li>
+          </ul>
+        </>
+      )
+    }
+  ];
+
   return (
     <section className="px-4 lg:px-0">
       <div className="w-full flex justify-end">
@@ -19,47 +63,31 @@ export default function HighQuality() {
             className="absolute w-[100%] h-[100%] object-cover inset-0"
           />
         </div>
-        <div className="w-full lg:w-[40%] flex flex-col justify-center gap-4">
+
+        <div className="w-full lg:w-[40%] flex flex-col justify-center lg:justify-start lg:mt-10 gap-4">
           <div className="flex gap-8 text-2xl">
-            <div className="flex items-center gap-4">
-              <div className="w-4 h-4 rounded-full bg-gray-300"></div>
-              <span>01</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="w-4 h-4 rounded-full bg-gray-300"></div>
-              <span>02</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="w-4 h-4 rounded-full bg-gray-300"></div>
-              <span>03</span>
-            </div>
+            {/* Circles for navigation */}
+            {slides.map((slide) => (
+              <div
+                key={slide.id}
+                className={`flex items-center gap-4 cursor-pointer ${activeSlide === slide.id ? "font-bold" : ""
+                  }`}
+                onClick={() => setActiveSlide(slide.id)}
+              >
+                <div
+                  className={`w-4 h-4 rounded-full ${activeSlide === slide.id ? "bg-blue-500" : "bg-gray-300"
+                    }`}
+                ></div>
+                <span>{`0${slide.id + 1}`}</span>
+              </div>
+            ))}
           </div>
+
+          {/* Display the active slide content */}
           <div className="slides">
-            <div className="hidden">
-              <h3 className="font-semibold text-2xl">Billing & Revenue Management</h3>
-              <p className="w-[90%] mt-2 ">
-                We understand that the medical industry is constantly evolving, and managing the day-to-day operations can be overwhelming.
-                That's why we provide comprehensive solutions that go beyond medical supplies. Our Billing & Revenue Management services help streamline your financial operations,
-                ensuring timely reimbursements and efficient billing processes, allowing you to focus on patient care.
-              </p>
-            </div>
-            <div className="hidden">
-              <h3 className="font-semibold text-2xl">Staffing & Recruiting</h3>
-              <p className="w-[90%] mt-2 ">
-                Whether you're looking for skilled clinicians, administrative staff, or temporary relief for your medical teams, we connect you with qualified professionals to help your
-                practice run smoothly and efficiently. We understand that finding qualified professionals is essential for maintaining the quality of care and smooth operation of your healthcare operations. That's why we carefully vet each candidate to ensure they not only meet the technical qualifications but also align with your organization's values and culture. From short-term coverage to long-term placements, our team is dedicated to connecting you with reliable talent, so your practice can continue to deliver exceptional care without disruption.
-              </p>
-            </div>
-            <div className="">
-              <h3 className="font-semibold text-2xl">Retail Solutions</h3>
-              <p className="w-[90%] mt-2">
-                In addition to our medical supply services, we extend our offerings to the retail sector, providing an array of durable goods and consumables tailored to healthcare facilities.
-              </p>
-              <ul className="list-disc ml-5 mt-2 w-[90%]">
-                <li><strong>Food & Drinks</strong> – Keep your staff and patients refreshed with a variety of options.</li>
-                <li><strong>Vending Machines</strong> – Offering on-site convenience and seamless access to essentials.</li>
-                <li><strong>Supplements & Nutraceuticals</strong> – Carefully selected to support patient wellness and recovery.</li>
-              </ul>
+            <div>
+              <h3 className="font-semibold text-2xl">{slides[activeSlide].title}</h3>
+              <p className="w-[90%] mt-2">{slides[activeSlide].content}</p>
             </div>
           </div>
         </div>

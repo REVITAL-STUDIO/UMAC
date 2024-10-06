@@ -17,7 +17,7 @@ export default function Solution() {
               className="absolute w-[100%] h-[100%] inset-0"
             />
           </div>
-          <h3 className="font-bold text-2xl"> Distributor for Healing BioLogix Post-Op Wound Care Program</h3>
+          <h3 className="font-bold text-2xl"> Distributor for Healing BioLogix Post-Op Wound Care</h3>
           <p>
             We proudly supply top-tier products essential to the healthcare industry. Offering the Healing BioLogix Post-Op Wound Care Program,
             designed to ensure optimal recovery for post-surgery patients with cutting-edge wound care technology
