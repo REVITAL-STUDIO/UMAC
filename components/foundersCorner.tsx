@@ -8,9 +8,9 @@ export default function Founders() {
       <h1 className="font-bold text-lg px-4">A Leader in Healthcare Innovation </h1>
       <div className="flex flex-col xl:flex-row justify-around items-center mt-[4rem] xl:px-12 px-8">
         <Image
-          src="/images/founder.png"
-          width={650}
-          height={650}
+          src="/images/founder-pic.jpg"
+          width={550}
+          height={550}
           alt="founder"
           className="rounded-[1rem]"
         />
