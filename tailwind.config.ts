@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        titillium: ['Titillium Web', 'sans-serif'], 
+        inconsolata: ['Inconsolata', 'monospace'],
+        oxygen: ['Oxygen', 'sans-serif'], 
+      },
     },
   },
   plugins: [],

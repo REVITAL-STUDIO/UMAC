@@ -34,7 +34,7 @@ export default function Nav() {
       <Link href="/">
         <Image src="/images/logo.png" width={80} height={80} alt="logo" />
       </Link>
-      <div className="lg:flex gap-12 hidden items-center font-semibold">
+      <div className="lg:flex gap-12 hidden items-center font-medium">
         {/* Apply the same color change class to all links */}
         <Link
           href="/products"
