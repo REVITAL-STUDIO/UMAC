@@ -12,7 +12,7 @@ export default function HighQuality() {
       content: (
         <>
           <p className="w-[90%] mt-2">
-            We understand that the medical industry is constantly evolving, and managing the day-to-day operations can be overwhelming. That's why we provide comprehensive solutions that go beyond medical supplies. Our Billing & Revenue Management services help streamline your financial operations, ensuring timely reimbursements and efficient billing processes, allowing you to focus on patient care.
+            We understand that the medical industry is constantly evolving, and managing the day-to-day operations can be overwhelming. That&apos;s why we provide comprehensive solutions that go beyond medical supplies. Our Billing & Revenue Management services help streamline your financial operations, ensuring timely reimbursements and efficient billing processes, allowing you to focus on patient care.
           </p>
         </>
       )
@@ -23,7 +23,7 @@ export default function HighQuality() {
       content: (
         <>
           <p className="w-[90%] mt-2">
-            Whether you're looking for skilled clinicians, administrative staff, or temporary relief for your medical teams, we connect you with qualified professionals to help your practice run smoothly and efficiently. We understand that finding qualified professionals is essential for maintaining the quality of care and smooth operation of your healthcare operations. That's why we carefully vet each candidate to ensure they not only meet the technical qualifications but also align with your organization's values and culture. From short-term coverage to long-term placements, our team is dedicated to connecting you with reliable talent, so your practice can continue to deliver exceptional care without disruption.
+            Whether you&apos;re looking for skilled clinicians, administrative staff, or temporary relief for your medical teams, we connect you with qualified professionals to help your practice run smoothly and efficiently. We understand that finding qualified professionals is essential for maintaining the quality of care and smooth operation of your healthcare operations. That&apos;s why we carefully vet each candidate to ensure they not only meet the technical qualifications but also align with your organization&apos;s values and culture. From short-term coverage to long-term placements, our team is dedicated to connecting you with reliable talent, so your practice can continue to deliver exceptional care without disruption.
           </p>
         </>
       )
