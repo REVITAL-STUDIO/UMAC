@@ -1,17 +1,22 @@
-export default function Footer() {
-    return (
-        <footer className="w-full py-4 flex justify-center items-center bg-transparent">
-        <div className="w-full max-w-screen-lg flex items-center justify-center">
-          {/* Line on the left */}
-          <div className="flex-grow border-t border-gray-400"></div>
-  
-          {/* Text in the center */}
-          <span className="mx-4 text-gray-600 text-sm">© UMAC 2024. All rights reserved.</span>
-  
-          {/* Line on the right */}
-          <div className="flex-grow border-t border-gray-400"></div>
-        </div>
-      </footer>
-    );
-}
+import Link from "next/link";
 
+export default function Footer() {
+  return (
+    <footer className="bg-[#fff] rounded-lg shadow m-4 dark:bg-gray-800">
+      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2024{" "}
+          <a href="https://flowbite.com/" className="hover:underline">
+            UMA LLC™
+          </a>
+          . All Rights Reserved.
+        </span>
+        <ul className="flex gap-x-6 flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <Link href="/products">Medical Products</Link>
+          <Link href="/retail">Retail</Link>
+          <Link href="/consulting">Consulting</Link>
+        </ul>
+      </div>
+    </footer>
+  );
+}

@@ -55,7 +55,7 @@ const MobileMenu = () => {
           {/* About */}
           <li className=" ">
             <Link
-              href="/"
+              href="/consulting"
               className="px-4 py-2 hover:border-b border-black g transition ease-in-out  duration-300"
             >
               Consulting

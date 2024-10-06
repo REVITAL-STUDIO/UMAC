@@ -8,8 +8,7 @@ export default function Consulting() {
   return (
     <main>
       <Nav />
-      <ConsultLast />
-
+      <ConsultLast />z
       <ConsultIntro />
       <Grow />
       <Foundation />

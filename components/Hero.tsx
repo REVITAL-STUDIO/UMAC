@@ -11,7 +11,7 @@ export default function Hero() {
         autoPlay
         playsInline
         src="/images/business-video.mp4"
-        className="absolute inset-0 w-[100%] h-[100%] object-cover -z-10 brightness-50"
+        className="absolute inset-0 w-[100%] h-[100%] object-cover -z-10 brightness-[40%]"
       />
       <div className="w-full h-3/4 flex flex-col  justify-center xl:px-16 px-4">
         <h1 className="text-white font-semibold  md:text-5xl text-xl md:w-[50%] w-[90%] mb-2">

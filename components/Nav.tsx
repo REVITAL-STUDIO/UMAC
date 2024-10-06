@@ -73,17 +73,22 @@ export default function Nav() {
         </button>
         <button
           onClick={toggleMenu}
-          className={`xl:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full space-x-reverse  z-50`}
+          className={`xl:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full z-50
+          `} // Change background color based on pathname
         >
           <span
-            className={`block w-1/2 my-0.5 border-[1.5px] border-white rounded-full ${
+            className={`block w-1/2 my-0.5 border-[1.5px] ${
+              pathname !== "/" ? "border-black" : "border-white"
+            } rounded-full ${
               openMenu
-                ? "rotate-45 transition-transform duration-300 ease-in-out black-white"
+                ? "rotate-45 transition-transform duration-300 ease-in-out"
                 : "transition-transform duration-300 ease-in-out"
             }`}
           ></span>
           <span
-            className={`block w-1/4 my-0.5 border-[1.5px] border-white rounded-full ${
+            className={`block w-1/4 my-0.5 border-[1.5px] ${
+              pathname !== "/" ? "border-black" : "border-white"
+            } rounded-full ${
               openMenu
                 ? "rotate-45 transition-transform duration-300 ease-in-out hidden"
                 : "transition-transform duration-300 ease-in-out"
@@ -92,10 +97,12 @@ export default function Nav() {
           <span
             className={`block ${
               openMenu ? "w-1/2" : "w-1/6"
-            } my-0.5 border-[1.5px] border-white rounded-full ${
+            } my-0.5 border-[1.5px] ${
+              pathname !== "/" ? "border-black" : "border-white"
+            } rounded-full ${
               openMenu
-                ? "-rotate-45 w-1/2 absolute top-2/5 transition-transform duration-300 ease-in-out black-white"
-                : "transition-transform duration-300 ease-in-out "
+                ? "-rotate-45 w-1/2 absolute top-2/5 transition-transform duration-300 ease-in-out"
+                : "transition-transform duration-300 ease-in-out"
             }`}
           ></span>
         </button>
