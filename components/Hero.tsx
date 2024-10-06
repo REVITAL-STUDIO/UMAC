@@ -21,14 +21,6 @@ export default function Hero() {
           At UMA, we leverage cutting-edge technology and strategic partnerships
           to improve patient outcomes.
         </p>
-        <div className="flex gap-x-6 my-[2%]">
-          <button className="bg-[#530099] text-white rounded-lg text-base shadow-lg px-6 py-3">
-            About Us
-          </button>
-          <button className="bg-[#ffffff] text-black  border rounded-lg text-base shadow-lg px-6 py-3">
-            Schedule Consultation
-          </button>
-        </div>
       </div>
     </div>
   );

@@ -230,7 +230,7 @@ textarea::-webkit-scrollbar {
   height: 0.3rem;
   justify-self: flex-end;
   align-self: center;
-  width: 55rem;
+  width: 35rem;
   max-width: 100%;
   overflow: hidden;
 }

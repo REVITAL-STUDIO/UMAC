@@ -5,12 +5,10 @@ export default function UMARetail() {
 
   return (
     <section className="w-full ">
-      <div className="p-4 my-4 ">
-        <h2 className="mt-[4%] xl:w-1/2 font-semibold text-4xl ">
-          Hear from Our Clients{" "}
-        </h2>
-      </div>
-      <div className="gap-x-4 flex items-center justify-center w-full p-4 h-full my-4">
+      <h2 className="mt-[4%]  text-center font-semibold my-[4%] text-4xl ">
+        Hear from Our Clients{" "}
+      </h2>
+      <div className="gap-x-4 flex items-center justify-center w-full  h-full my-4">
         <EmblaCarouselRetail slides={slide} />
       </div>
     </section>
