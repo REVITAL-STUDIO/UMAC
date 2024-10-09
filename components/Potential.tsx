@@ -4,9 +4,9 @@ import React from "react";
 export default function Potential() {
   return (
     <section className="w-full min-h-screen grid xl:grid-cols-3 xl:grid-row-3 xl:px-16 gap-12 my-4">
-      <div className=" col-span-1 xl:order-1 order-2  row-span-2 flex flex-col justify-between xl:px-4 px-8 border-black/20">
+      <div className=" col-span-1 xl:order-1 order-2  row-span-2 flex flex-col  xl:px-4 px-8 border-black/20">
         <span className="font-bold text-lg text-left mb-[8%]">About UMAC</span>
-        <div className="xl:mb-[75%] mb-[25%] xl:text-4xl text-2xl">
+        <div className="xl:mb-[30%] mb-[25%] xl:text-lg text-2xl">
           <div className="  py-[4%] w-full ">
             <h1 className="   text-black/50 font-semibold">
               Connecting Care, Transforming Lives

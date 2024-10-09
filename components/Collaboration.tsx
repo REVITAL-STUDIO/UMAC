@@ -4,7 +4,9 @@ export default function Collaboration() {
   return (
     <section className="w-full xl:px-16 xl:my-[8%] my-[16%] flex">
       <div className="xl:w-[50%] h-full flex flex-col justify-center">
-        <span className="font-bold xl:text-lg text-base px-4 mb-6">Our Mission</span>
+        <span className="font-bold xl:text-lg text-base px-4 mb-6">
+          Our Mission
+        </span>
         <h1 className="xl:text-6xl text-3xl font-semibold px-4 mb-6 text-black">
           Transforming Healthcare Through Innovation and Collaboration
         </h1>

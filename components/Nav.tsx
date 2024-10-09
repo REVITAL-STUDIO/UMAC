@@ -40,18 +40,19 @@ export default function Nav() {
           href="/products"
           className={
             shouldChangeColor
-              ? "text-black px-4 py-2 border border-black rounded-full bg-white/20 backdrop-blur-lg"
-              : "text-white px-4 py-2 border border-white rounded-full bg-white/20 backdrop-blur-lg"
+              ? "text-black px-4 py-2 border border-black rounded-full bg-white/20 backdrop-blur-lg hover:shadow-xl hover:shadow-[#B68D07] transition duration-200 ease-in-out"
+              : "text-white px-4 py-2 border-b  hover:shadow-xl hover:shadow-[#B68D07] transition duration-200 ease-in-out"
           }
         >
           Medical Products
         </Link>
+
         <Link
           href="/retail"
           className={
             shouldChangeColor
-              ? "text-black px-4 py-2 border border-black rounded-full bg-white/20 backdrop-blur-lg"
-              : "text-white px-4 py-2 border border-white rounded-full bg-white/20 backdrop-blur-lg"
+              ? "text-black px-4 py-2 border border-black rounded-full bg-white/20 backdrop-blur-lg hover:shadow-xl hover:shadow-[#B68D07] transition duration-200 ease-in-out"
+              : "text-white px-4 py-2 border-b  hover:shadow-xl hover:shadow-[#B68D07] transition duration-200 ease-in-out"
           }
         >
           Retail
@@ -60,8 +61,8 @@ export default function Nav() {
           href="/consulting"
           className={
             shouldChangeColor
-              ? "text-black px-4 py-2 border border-black rounded-full bg-white/20 backdrop-blur-lg"
-              : "text-white px-4 py-2 border border-white rounded-full bg-white/20 backdrop-blur-lg"
+              ? "text-black px-4 py-2 border border-black rounded-full bg-white/20 backdrop-blur-lg hover:shadow-xl hover:shadow-[#B68D07] transition duration-200 ease-in-out"
+              : "text-white px-4 py-2 border-b  hover:shadow-xl hover:shadow-[#B68D07] transition duration-200 ease-in-out"
           }
         >
           Consulting

@@ -5,8 +5,10 @@ export default function Founders() {
   return (
     <section className="xl:px-20 my-8">
       <span className=" text-3xl px-4">Our Founder</span>
-      <h1 className="font-bold text-lg px-4">A Leader in Healthcare Innovation </h1>
-      <div className="flex flex-col xl:flex-row justify-around items-center mt-[4rem] xl:px-12 px-8">
+      <h1 className="font-bold text-lg px-4">
+        A Leader in Healthcare Innovation{" "}
+      </h1>
+      <div className="flex flex-col xl:flex-row justify-around items-center mt-[4rem]">
         <Image
           src="/images/founder-pic.jpg"
           width={550}
