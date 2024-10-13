@@ -1,5 +1,6 @@
 // import BulletItem from "@/components/BulletItem";
 import Collaboration from "@/components/Collaboration";
+import Founders from "@/components/foundersCorner";
 import Hero from "@/components/Hero";
 import Potential from "@/components/Potential";
 import Transform from "@/components/Transform";
@@ -13,7 +14,7 @@ export default function Home() {
       <Potential />
       <TrustSlides />
       <Transform />
-      {/* <Founders /> */}
+      <Founders />
     </main>
   );
 }
