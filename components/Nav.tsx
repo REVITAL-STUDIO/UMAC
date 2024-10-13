@@ -27,6 +27,7 @@ export default function Nav() {
   const shouldChangeColor =
     pathname === "/products" ||
     pathname === "/retail" ||
+    pathname === "/contact" ||
     pathname === "/consulting";
 
   return (
@@ -69,9 +70,9 @@ export default function Nav() {
         </Link>
       </div>
       <div className="flex gap-x-4">
-        <button className="bg-[#530099] hidden xl:block text-white rounded-lg text-base shadow-lg px-6 py-3">
-          Get Started
-        </button>
+        <a href="/contact" className="bg-[#530099] hidden xl:block text-white rounded-lg text-base shadow-lg px-6 py-3 transition-transform duration-200 hover:scale-105 active:scale-100">
+          Contact Us
+        </a>
         <button
           onClick={toggleMenu}
           className={`xl:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full z-50
@@ -84,7 +85,7 @@ export default function Nav() {
               openMenu
                 ? "rotate-45 transition-transform duration-300 ease-in-out"
                 : "transition-transform duration-300 ease-in-out"
-            }`}
+              }`}
           ></span>
           <span
             className={`block w-1/4 my-0.5 border-[1.5px] ${
@@ -93,7 +94,7 @@ export default function Nav() {
               openMenu
                 ? "rotate-45 transition-transform duration-300 ease-in-out hidden"
                 : "transition-transform duration-300 ease-in-out"
-            }`}
+              }`}
           ></span>
           <span
             className={`block ${

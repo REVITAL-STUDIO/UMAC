@@ -18,9 +18,9 @@ export default function ConsultLast() {
           competitive landscape. Let&apos;s work together to take your business to
           new heights.{" "}
         </h3>
-        <button className="bg-[#530099] w-fit mt-4 text-white rounded-lg text-base shadow-lg px-6 py-3">
+        <a href="/contact" className="bg-[#530099] w-fit mt-4 text-white rounded-lg text-base shadow-lg px-6 py-3 transition-transform duration-200 hover:scale-105 active:scale-100">
           Let&apos;s Talk
-        </button>
+        </a>
       </div>
     </section>
   );
