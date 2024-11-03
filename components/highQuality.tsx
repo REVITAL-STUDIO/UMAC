@@ -80,7 +80,7 @@ export default function HighQuality() {
         </h2>
       </div>
 
-      <div className="flex flex-col lg:flex-row w-full justify-around px-4">
+      <div className="flex flex-col lg:flex-row w-full justify-around px-4 xl:px-0">
         <div className="relative  overflow-hidden w-full lg:w-2/5 rounded-lg shadow-md h-[500px] border">
           <Image
             src="/images/products-slide-1.png"
