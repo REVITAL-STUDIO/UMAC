@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "UMALLC",
@@ -15,19 +16,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-          
-          {/* Favicons */}
-          <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
-          <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-          
-          
-          {/* Additional Favicon Sizes for Android */}
-          <link rel="icon" type="image/png" sizes="192x192" href="/images/android-chrome-192x192.png" />
-          <link rel="icon" type="image/png" sizes="512x512" href="/images/android-chrome-512x512.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/apple-touch-icon.png"
+        />
+
+        {/* Favicons */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon-16x16.png"
+        />
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+        {/* Additional Favicon Sizes for Android */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/images/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/images/android-chrome-512x512.png"
+        />
       </head>
       <body className={`font-inconsolata`}>
+        <Nav></Nav>
         {children}
         <Footer />
       </body>
