@@ -11,9 +11,10 @@ const NAV_LINKS = [
   { href: "/products", label: "Medical Products" },
   { href: "/retail", label: "Retail" },
   { href: "/consulting", label: "Consulting" },
+  { href: "/recruiting", label: "Recruiting" },
 ];
 
-const LIGHT_ROUTES = ["/products", "/retail", "/contact", "/consulting"];
+const LIGHT_ROUTES = ["/products", "/retail", "/contact", "/consulting", "/recruiting"];
 
 export default function Nav() {
   const [openMenu, setOpenMenu] = useState(false);

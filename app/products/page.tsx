@@ -1,7 +1,7 @@
-import HighQuality from "@/components/highQuality";
+import HighQuality from "@/components/HighQuality";
 import Industry from "@/components/Industry";
-import ProductCategories from "@/components/productCategories";
-import ProductIntro from "@/components/productIntro";
+import ProductCategories from "@/components/ProductCategories";
+import ProductIntro from "@/components/ProductIntro";
 
 export default function Products() {
   return (

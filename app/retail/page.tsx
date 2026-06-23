@@ -1,6 +1,6 @@
-import ProductGrid from "@/components/productGrid";
-import RetailOffer from "@/components/retailOffering";
-import RetailTitle from "@/components/retailTitle";
+import ProductGrid from "@/components/ProductGrid";
+import RetailOffer from "@/components/RetailOffering";
+import RetailTitle from "@/components/RetailTitle";
 
 export default function Retail() {
   return (

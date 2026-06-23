@@ -10,6 +10,7 @@ const links = [
   { href: "/products", label: "Medical Products" },
   { href: "/retail", label: "Retail" },
   { href: "/consulting", label: "Consulting" },
+  { href: "/recruiting", label: "Recruiting" },
   { href: "/about", label: "About" },
   { href: "/join", label: "Join Us" },
 ];

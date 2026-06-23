@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import EmblaCarousel from "./emblaCarousel";
+import EmblaCarousel from "./EmblaCarousel";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
