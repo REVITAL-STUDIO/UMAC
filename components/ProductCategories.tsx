@@ -201,7 +201,14 @@ export default function ProductCategories() {
             transition={{ duration: 0.7, ease, delay: 0.2 }}
             className="text-sm text-neutral-400 font-light leading-relaxed max-w-[40ch] xl:text-right"
           >
-            A comprehensive catalog of medical products and services built to serve clinics, hospitals, and healthcare facilities at every level of care.
+            Here are some of our top products. For a deeper dive,{" "}
+            <a
+              href="mailto:info@umallc.com"
+              className="text-[#530099] hover:underline"
+            >
+              info@umallc.com
+            </a>
+            .
           </motion.p>
         </div>
 
