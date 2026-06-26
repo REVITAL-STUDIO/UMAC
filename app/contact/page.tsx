@@ -100,31 +100,8 @@ const details = [
         />
       </svg>
     ),
-    label: "Administrative",
-    value: "admin@umallc.com",
-  },
-  {
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <rect
-          x="1.5"
-          y="3.5"
-          width="13"
-          height="9"
-          rx="1.5"
-          stroke="currentColor"
-          strokeWidth="1.3"
-        />
-        <path
-          d="M1.5 5.5l6.5 4 6.5-4"
-          stroke="currentColor"
-          strokeWidth="1.3"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-    label: "Orders",
-    value: "orders@umallc.com",
+    label: "Recruiting",
+    value: "recruiting@umallc.com",
   },
   {
     icon: (

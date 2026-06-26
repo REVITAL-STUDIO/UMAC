@@ -5,9 +5,6 @@ import EmblaCarousel from "./EmblaCarousel";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const slideIndexes: number[] = [
-  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
-];
 
 // const stats = [
 //   { value: "200+", label: "Healthcare providers" },
@@ -93,7 +90,7 @@ export default function TrustSlides() {
         transition={{ duration: 0.8, ease, delay: 0.35 }}
         className="w-full flex items-center justify-center xl:justify-end"
       >
-        <EmblaCarousel slides={slideIndexes} />
+        <EmblaCarousel />
       </motion.div>
 
       {/* Bottom label row */}

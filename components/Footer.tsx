@@ -24,8 +24,7 @@ const links = [
 
 const emails = [
   { label: "General", address: "info@umallc.com" },
-  { label: "Admin", address: "admin@umallc.com" },
-  { label: "Orders", address: "orders@umallc.com" },
+  { label: "Recruiting", address: "recruiting@umallc.com" },
 ];
 
 export default function Footer() {
@@ -85,7 +84,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               {emails.map(({ label, address }) => (
                 <div key={label} className="flex items-center gap-2.5">
-                  <span className="text-[10px] font-semibold tracking-widest uppercase text-white/25 w-12 flex-shrink-0">
+                  <span className="text-[10px] font-semibold tracking-widest uppercase text-white/25 w-20 flex-shrink-0">
                     {label}
                   </span>
                   <a
