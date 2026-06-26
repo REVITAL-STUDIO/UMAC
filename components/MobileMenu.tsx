@@ -12,7 +12,6 @@ const links = [
   { href: "/consulting", label: "Professional Services" },
   { href: "/recruiting", label: "Recruiting" },
   { href: "/about", label: "About" },
-  { href: "/join", label: "Join Us" },
 ];
 
 const MobileMenu = () => {
@@ -45,7 +44,7 @@ const MobileMenu = () => {
       />
 
       {/* Nav links */}
-      <div className="flex-1 flex flex-col justify-center px-8 pb-8 mt-16 overflow-y-auto">
+      <div className="flex-1 flex flex-col justify-center px-8 pb-4 mt-16">
         <ul className="flex flex-col">
           {links.map(({ href, label }, i) => {
             const isActive = pathname === href;
@@ -59,7 +58,7 @@ const MobileMenu = () => {
               >
                 <Link
                   href={href}
-                  className={`flex items-center justify-between py-5 group transition-colors duration-300
+                  className={`flex items-center justify-between py-3.5 group transition-colors duration-300
                     ${isActive ? "text-white" : "text-white/40 hover:text-white"}`}
                 >
                   <div className="flex items-center gap-4">
@@ -67,7 +66,7 @@ const MobileMenu = () => {
                       <span className="w-1.5 h-1.5 rounded-full bg-[#B68D07]" />
                     )}
                     <span
-                      className={`text-2xl font-semibold tracking-tight ${!isActive && "pl-[calc(1.5*4px+0.375rem)]"}`}
+                      className={`text-xl font-semibold tracking-tight ${!isActive && "pl-[calc(1.5*4px+0.375rem)]"}`}
                     >
                       {label}
                     </span>
