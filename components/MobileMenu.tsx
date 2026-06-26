@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const links = [
-  { href: "/", label: "Home" },
   { href: "/products", label: "Medical Products" },
   { href: "/retail", label: "Retail" },
   { href: "/consulting", label: "Professional Services" },
