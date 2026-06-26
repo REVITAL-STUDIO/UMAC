@@ -9,7 +9,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Medical Products" },
   { href: "/retail", label: "Retail" },
-  { href: "/consulting", label: "Consulting" },
+  { href: "/consulting", label: "Professional Services" },
   { href: "/recruiting", label: "Recruiting" },
   { href: "/about", label: "About" },
   { href: "/join", label: "Join Us" },

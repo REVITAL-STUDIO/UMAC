@@ -9,22 +9,22 @@ const slides = [
   {
     id: 0,
     label: "01",
-    title: "Billing & Revenue Management",
-    body: "We provide comprehensive solutions that go beyond medical supplies. Our Billing & Revenue Management services streamline your financial operations, ensuring timely reimbursements and efficient billing processes — allowing you to focus entirely on patient care.",
+    title: "Diagnostics & Lab Services",
+    body: "Rapid POC Test Kits for bedside and clinic use, plus Molecular and Genetic Lab Services — giving providers the fast, accurate diagnostic insight needed to make informed treatment decisions.",
     image: "/images/products-slide-1.png",
   },
   {
     id: 1,
     label: "02",
-    title: "Staffing & Recruiting",
-    body: "We carefully vet each candidate to ensure they meet technical qualifications and align with your organization's values. From short-term coverage to long-term placements, we connect you with reliable talent so your practice can continue delivering exceptional care without disruption.",
+    title: "Wound Care Programs",
+    body: "Comprehensive Wound Care and Post-Op Wound Care Programs built for hospitals, clinics, and home care settings — reducing complications, supporting recovery, and improving patient outcomes.",
     image: "/images/products-slide-1.png",
   },
   {
     id: 2,
     label: "03",
-    title: "Retail Solutions",
-    body: "In addition to our medical supply services, we extend our offerings to the retail sector — providing durable goods and consumables tailored to healthcare facilities, including food & drinks, vending machines, and supplements to support patient wellness.",
+    title: "Supplies, Devices & Equipment",
+    body: "A full catalog of Surgical Supplies, Medical Devices, Medical Equipment, Pharmacy Products, Nutraceuticals & Supplements, Revenue Recovery, and BioHazard Waste Removal — everything your facility needs under one partnership.",
     image: "/images/products-slide-1.png",
   },
 ];

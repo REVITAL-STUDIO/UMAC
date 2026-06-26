@@ -17,7 +17,7 @@ export default function ConsultIntro() {
         >
           <span className="block w-8 h-px bg-[#B68D07]" />
           <span className="text-[#B68D07] text-xs font-semibold tracking-[0.2em] uppercase">
-            UMA Consulting
+            UMA Professional Services
           </span>
         </motion.div>
 

@@ -1,13 +1,13 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import FoundersCorner from "@/components/FoundersCorner";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const values = [
   {
     name: "Compassion",
-    desc: "Every decision we make is guided by genuine care for our partners, patients, and communities.",
+    desc: "We lead with genuine care in every partnership — understanding the human impact behind every healthcare decision we make.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -21,7 +21,7 @@ const values = [
   },
   {
     name: "Quality",
-    desc: "We hold ourselves to the highest clinical and operational standards — because lives depend on it.",
+    desc: "We hold ourselves and our partners to the highest clinical and operational standards, ensuring every solution we deliver performs at the highest level.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <circle
@@ -43,7 +43,7 @@ const values = [
   },
   {
     name: "Teamwork",
-    desc: "Our strength comes from collaboration — within our organization and with every partner we serve.",
+    desc: "UMA's strength comes from collaboration — working alongside providers, clinics, hospitals, and purchasing organizations to achieve shared goals.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <circle cx="7" cy="7" r="3" stroke="currentColor" strokeWidth="1.4" />
@@ -59,7 +59,7 @@ const values = [
   },
   {
     name: "Respect",
-    desc: "We treat every individual — client, partner, or patient — with dignity and professionalism.",
+    desc: "Every client, partner, and patient we serve is treated with dignity and professionalism — no exceptions, at every level of the organization.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -73,7 +73,7 @@ const values = [
   },
   {
     name: "Integrity",
-    desc: "We operate with transparency and accountability, ensuring every partnership delivers real value.",
+    desc: "We operate with full transparency and accountability, ensuring every engagement delivers measurable, real-world value to those we serve.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -97,7 +97,7 @@ const values = [
 const competencies = [
   {
     title: "Pharmaceutical Sales & Consulting",
-    body: "Deep expertise in pharmaceutical sales strategy, market access, and clinical consulting across commercial and government healthcare sectors.",
+    body: "Specialized pharmaceutical sales and consulting services spanning market access, clinical strategy, and both commercial and governmental healthcare sectors.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -116,7 +116,7 @@ const competencies = [
   },
   {
     title: "Health & Allied Services",
-    body: "Comprehensive health and allied services delivered across multiple care environments — from clinics and hospitals to ACO groups and national purchasing organizations.",
+    body: "Health and allied services delivered across multiple care environments — from clinics and hospitals to ACO groups and national purchasing organizations.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -135,7 +135,7 @@ const competencies = [
   },
   {
     title: "Professional & Management Development Training",
-    body: "Customized training programs that build leadership capabilities, improve team dynamics, and equip workforces with tools to thrive in today's competitive landscape.",
+    body: "Professional and management development training designed to build leadership capabilities and equip teams with the tools they need to excel in today&apos;s competitive landscape.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -159,7 +159,7 @@ const competencies = [
   },
   {
     title: "Administrative & General Management Consulting",
-    body: "Strategic consulting across operations, cost savings, and administrative management — designed to drive operational excellence and long-term organizational growth.",
+    body: "Administrative and general management consulting focused on driving operational excellence, reducing costs, and delivering long-term organizational growth.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <rect
@@ -203,7 +203,7 @@ const competencies = [
   },
   {
     title: "Professional & Administrative Staffing Solutions",
-    body: "End-to-end staffing solutions connecting healthcare organizations with qualified clinical, administrative, and management professionals for short and long-term placements.",
+    body: "Professional and administrative staffing solutions connecting healthcare organizations with qualified clinical and management professionals for short- and long-term placements.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <circle
@@ -228,17 +228,17 @@ const differentiators = [
   {
     number: "01",
     title: "Domestic & International Expertise",
-    body: "Extensive experience in domestic and international healthcare sales and operations — bringing global perspective to every engagement.",
+    body: "Extensive experience in domestic and international healthcare sales and operations, bringing a global perspective to every engagement.",
   },
   {
     number: "02",
     title: "Community Engagement & Leadership",
-    body: "Strong community roots and leadership, including successful fundraising initiatives that have expanded educational access for youth in New Orleans.",
+    body: "Strong community engagement and leadership, including successful fundraising initiatives expanding educational access for youth in New Orleans.",
   },
   {
     number: "03",
     title: "Proven Nationwide Collaboration",
-    body: "Demonstrated capability to collaborate effectively with hospitals, clinics, physicians, and healthcare systems across the country.",
+    body: "Proven capability to collaborate effectively with hospitals, clinics, physicians, and healthcare systems nationwide.",
   },
 ];
 
@@ -273,14 +273,15 @@ export default function About() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease, delay: 0.2 }}
-          className="text-sm md:text-base text-neutral-500 font-light leading-relaxed max-w-[58ch]"
+          className="text-sm md:text-base text-neutral-500 font-light leading-relaxed max-w-[62ch]"
         >
-          UMA is a healthcare solutions and management organization providing
-          pharmaceutical, medical, and management solutions to both commercial
-          and governmental healthcare sectors. We partner with providers,
-          clinics, ACO groups, hospitals, and national purchasing organizations
-          to drive strategic growth, operational excellence, and improved
-          patient outcomes.
+          Unity Medical Alliance, LLC (UMA) is a healthcare solutions and
+          management organization providing pharmaceutical, medical, and
+          management solutions to both commercial and governmental healthcare
+          sectors. With a deep understanding of today&apos;s diverse healthcare
+          environments, UMA partners with providers, clinics, ACO groups,
+          hospitals, and national purchasing organizations to drive strategic
+          growth, operational excellence, and improved patient outcomes.
         </motion.p>
 
         <motion.div
@@ -295,7 +296,7 @@ export default function About() {
       {/* ── Values ── */}
       <section className="w-full py-24 xl:py-32 px-6 xl:px-20 bg-neutral-50 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col xl:flex-row xl:items-end justify-between gap-6 mb-14">
+          <div className="flex flex-col  justify-between gap-6 mb-14">
             <div>
               <motion.div
                 initial={{ opacity: 0, x: -16 }}
@@ -325,10 +326,12 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, ease, delay: 0.2 }}
-              className="text-sm text-neutral-400 font-light leading-relaxed max-w-[40ch] xl:text-right"
+              className="text-sm text-neutral-400 font-light leading-relaxed max-w-[40ch] xl:text-left"
             >
-              These principles ensure every partnership delivers true Value
-              Added Services designed to elevate performance, productivity, and
+              Compassion, quality, teamwork, respect, and integrity are the core
+              values that guide UMA&apos;s operation. These principles ensure
+              that every partnership delivers true &ldquo;Value Added
+              Services&rdquo; designed to elevate performance, productivity, and
               long-term impact.
             </motion.p>
           </div>
@@ -487,61 +490,7 @@ export default function About() {
       </section>
 
       {/* ── Founder ── */}
-      <section className="w-full py-24 xl:py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 xl:px-20">
-          <motion.div
-            initial={{ opacity: 0, x: -16 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease }}
-            className="flex items-center gap-3 mb-6"
-          >
-            <span className="block w-8 h-px bg-[#B68D07]" />
-            <span className="text-[#B68D07] text-xs font-semibold tracking-[0.2em] uppercase">
-              Our Founder
-            </span>
-          </motion.div>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease, delay: 0.1 }}
-            className="text-3xl md:text-4xl xl:text-5xl font-semibold leading-[1.1] tracking-tight text-neutral-900 mb-16 max-w-[22ch]"
-          >
-            A Leader in{" "}
-            <span className="text-neutral-400">Healthcare Innovation</span>
-          </motion.h2>
-
-          <div className="flex flex-col xl:flex-row items-start gap-12 xl:gap-20">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.96, x: -24 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease, delay: 0.1 }}
-              className="xl:w-[42%] w-full flex-shrink-0"
-            >
-              <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.12)]">
-                <Image
-                  src="/images/founder-pic.jpg"
-                  fill
-                  alt="Founder"
-                  className="object-cover object-top"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-4">
-                  <p className="text-white font-semibold text-base leading-none mb-1">
-                    Founder & CEO
-                  </p>
-                  <p className="text-white/55 text-xs font-light">
-                    Unity Medical Alliance, LLC
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <FoundersCorner />
     </>
   );
 }

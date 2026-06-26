@@ -8,13 +8,14 @@ import { createPortal } from "react-dom";
 import MobileMenu from "./MobileMenu";
 
 const NAV_LINKS = [
+  { href: "/about", label: "About" },
   { href: "/products", label: "Medical Products" },
   { href: "/retail", label: "Retail" },
-  { href: "/consulting", label: "Consulting" },
+  { href: "/consulting", label: "Professional Services" },
   { href: "/recruiting", label: "Recruiting" },
 ];
 
-const LIGHT_ROUTES = ["/products", "/retail", "/contact", "/consulting", "/recruiting"];
+const LIGHT_ROUTES = ["/products", "/retail", "/contact", "/consulting", "/recruiting", "/join", "/about"];
 
 export default function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -77,7 +78,7 @@ export default function Nav() {
                   key={href}
                   href={href}
                   className={`
-                    relative px-5 py-2.5 rounded-full text-sm font-medium tracking-wide
+                    relative px-4 py-2 rounded-full text-xs font-medium tracking-wide
                     transition-all duration-300 ease-out group
                     ${
                       isActive
@@ -94,7 +95,7 @@ export default function Nav() {
                   {isActive && (
                     <motion.span
                       layoutId="nav-active-dot"
-                      className={`absolute bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full
+                      className={`absolute bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full
                         ${isLightRoute || scrolled ? "bg-[#530099]" : "bg-white"}`}
                       transition={{
                         type: "spring",

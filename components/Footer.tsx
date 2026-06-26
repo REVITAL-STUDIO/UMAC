@@ -7,7 +7,8 @@ const links = [
     items: [
       { label: "Medical Products", href: "/products" },
       { label: "Retail", href: "/retail" },
-      { label: "Consulting", href: "/consulting" },
+      { label: "Professional Services", href: "/consulting" },
+      { label: "Recruiting", href: "/recruiting" },
     ],
   },
   {
@@ -19,6 +20,12 @@ const links = [
       { label: "Contact Us", href: "/contact" },
     ],
   },
+];
+
+const emails = [
+  { label: "General", address: "info@umallc.com" },
+  { label: "Admin", address: "admin@umallc.com" },
+  { label: "Orders", address: "orders@umallc.com" },
 ];
 
 export default function Footer() {
@@ -75,6 +82,21 @@ export default function Footer() {
               Delivering high-end diagnostics and medical solutions for better
               healthcare outcomes worldwide.
             </p>
+            <div className="flex flex-col gap-2">
+              {emails.map(({ label, address }) => (
+                <div key={label} className="flex items-center gap-2.5">
+                  <span className="text-[10px] font-semibold tracking-widest uppercase text-white/25 w-12 flex-shrink-0">
+                    {label}
+                  </span>
+                  <a
+                    href={`mailto:${address}`}
+                    className="text-xs text-white/40 hover:text-white/70 transition-colors duration-300 font-light"
+                  >
+                    {address}
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Link columns */}

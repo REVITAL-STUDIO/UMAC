@@ -491,6 +491,72 @@ export default function Recruiting() {
           </motion.div>
         </div>
       </section>
+
+      {/* ── Sales Rep CTA ── */}
+      <section className="w-full py-24 xl:py-32 px-6 xl:px-20 bg-neutral-950 overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-10">
+          <div>
+            <motion.div
+              initial={{ opacity: 0, x: -16 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease }}
+              className="flex items-center gap-3 mb-6"
+            >
+              <span className="block w-8 h-px bg-[#B68D07]" />
+              <span className="text-[#B68D07] text-xs font-semibold tracking-[0.2em] uppercase">
+                Join UMA
+              </span>
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease, delay: 0.1 }}
+              className="text-3xl md:text-4xl xl:text-5xl font-semibold leading-[1.1] tracking-tight text-white mb-5 max-w-[22ch]"
+            >
+              Interested in Becoming{" "}
+              <span className="text-white/35">a UMA Sales Rep?</span>
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, ease, delay: 0.2 }}
+              className="text-sm text-white/40 font-light leading-relaxed max-w-[50ch]"
+            >
+              UMA is actively recruiting driven, entrepreneurial sales professionals to grow our national network. Uncapped commissions, flexible schedule, and world-class healthcare products.
+            </motion.p>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease, delay: 0.3 }}
+            className="flex-shrink-0"
+          >
+            <Link
+              href="/join"
+              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full
+                bg-[#B68D07] text-white text-sm font-semibold tracking-wide
+                shadow-[0_0_0_1px_rgba(182,141,7,0.4),0_2px_16px_rgba(182,141,7,0.25)]
+                hover:shadow-[0_0_0_1px_rgba(182,141,7,0.6),0_4px_24px_rgba(182,141,7,0.4)]
+                hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+            >
+              Apply as a Sales Rep
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M2.5 7h9m-4-4.5L11 7l-3.5 4.5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
     </>
   );
 }

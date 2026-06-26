@@ -51,12 +51,12 @@ export default function ProductIntro() {
           transition={{ duration: 0.8, ease, delay: 0.25 }}
           className="text-sm md:text-base text-neutral-500 font-light leading-relaxed max-w-[48ch] mb-10"
         >
-          At UMALLC, we empower healthcare providers with high-quality medical
-          supplies and innovative solutions. With over{" "}
-          <span className="text-neutral-900 font-medium">28 years</span> of
-          global retail sales experience, our team understands the critical
-          needs of clinics, hospitals, and healthcare facilities — ensuring
-          products that enhance safety and patient care.
+          UMA provides pharmaceutical, medical, and health-allied products to
+          both commercial and governmental healthcare sectors. With a deep
+          understanding of today&apos;s diverse healthcare environments, we
+          partner with providers, clinics, hospitals, and national purchasing
+          organizations to deliver products that enhance safety and improve
+          patient outcomes.
         </motion.p>
 
         {/* CTAs */}

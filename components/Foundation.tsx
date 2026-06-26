@@ -5,94 +5,64 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const points = [
   {
-    title: "Tailored Corporate Training",
-    body: "We design customized corporate training programs that address the unique needs of your business. Focusing on communication, leadership, and teamwork — each program is carefully crafted to ensure practical, measurable results that align with your company's culture and goals.",
+    title: "Leadership Development",
+    body: "Targeted leadership development programs that equip managers and executives with the skills to inspire their teams, drive organizational growth, and lead with confidence in today's healthcare environment.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path
-          d="M10 2L12.5 7.5H18L13.5 11l2 6L10 14l-5.5 3 2-6L2 7.5h5.5L10 2Z"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          strokeLinejoin="round"
-        />
+        <path d="M10 2l2 5h5l-4 3 1.5 5L10 12l-4.5 3L7 10 3 7h5l2-5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
-    title: "Proven Results in Employee Engagement",
-    body: "We have a track record of delivering significant improvements in employee engagement. By enhancing communication and fostering collaboration, we help businesses reduce turnover, increase morale, and build stronger team dynamics that lead to better outcomes.",
+    title: "Employee Retention",
+    body: "Proven strategies and programs that help healthcare organizations reduce turnover, increase employee satisfaction, and build a workplace culture that attracts and retains top talent.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path
-          d="M3 14l4-5 3.5 3L14 7l3 4"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <rect
-          x="2"
-          y="2"
-          width="16"
-          height="16"
-          rx="2"
-          stroke="currentColor"
-          strokeWidth="1.4"
-        />
+        <circle cx="10" cy="7" r="3.5" stroke="currentColor" strokeWidth="1.4" />
+        <path d="M3 18c0-3.314 3.134-6 7-6s7 2.686 7 6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     ),
   },
   {
-    title: "Certified TypeCoach Expertise",
-    body: "As Certified TypeCoach Professionals, UMA Consulting leverages personality type insights to transform workplace communication. Our expertise helps teams understand different communication styles, fostering collaboration, reducing conflicts, and strengthening overall performance.",
+    title: "Team Unity",
+    body: "Customized team-building programs that strengthen collaboration, break down silos, and create a unified workforce aligned around your organization's mission and goals.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <circle
-          cx="10"
-          cy="10"
-          r="7.5"
-          stroke="currentColor"
-          strokeWidth="1.4"
-        />
-        <path
-          d="M7 10l2.5 2.5L13 8"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+        <circle cx="7" cy="7" r="3" stroke="currentColor" strokeWidth="1.4" />
+        <circle cx="13" cy="7" r="3" stroke="currentColor" strokeWidth="1.4" />
+        <path d="M2 17c0-2.761 2.239-5 5-5h6c2.761 0 5 2.239 5 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     ),
   },
   {
-    title: "Flexible, Scalable Solutions",
-    body: "UMA offers flexible consulting solutions that grow alongside your business. Whether in-person workshops, virtual training, or ongoing support — our services are adaptable and scalable to fit your evolving needs and long-term objectives.",
+    title: "Effective Communication",
+    body: "Training programs that improve communication at every level of the organization — helping teams communicate clearly, reduce misunderstandings, and foster a more collaborative and productive work environment.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path
-          d="M4 10h12M10 4v12"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          strokeLinecap="round"
-        />
-        <rect
-          x="2"
-          y="2"
-          width="7"
-          height="7"
-          rx="1.5"
-          stroke="currentColor"
-          strokeWidth="1.4"
-        />
-        <rect
-          x="11"
-          y="11"
-          width="7"
-          height="7"
-          rx="1.5"
-          stroke="currentColor"
-          strokeWidth="1.4"
-        />
+        <path d="M17 3H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h5l2 3 2-3h5a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
+        <path d="M7 8h6M7 11h4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Cost Savings Solutions",
+    body: "Strategic consulting focused on identifying operational inefficiencies and implementing cost-reduction measures — delivering measurable savings without compromising the quality of care your organization provides.",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 14l4-5 3.5 3L14 7l3 3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="1.4" />
+      </svg>
+    ),
+  },
+  {
+    title: "Recruitment & Staffing Services",
+    body: "End-to-end recruitment and staffing solutions connecting healthcare organizations with qualified clinical, administrative, and management professionals for short- and long-term placements nationwide.",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <rect x="3" y="3" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.4" />
+        <rect x="11" y="3" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.4" />
+        <rect x="3" y="11" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.4" />
+        <rect x="11" y="11" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.4" />
       </svg>
     ),
   },
@@ -114,7 +84,7 @@ export default function Foundation() {
             >
               <span className="block w-8 h-px bg-[#B68D07]" />
               <span className="text-[#B68D07] text-xs font-semibold tracking-[0.2em] uppercase">
-                Why UMA Consulting
+                What We Offer
               </span>
             </motion.div>
             <motion.h2
@@ -124,8 +94,8 @@ export default function Foundation() {
               transition={{ duration: 0.8, ease, delay: 0.1 }}
               className="text-3xl md:text-4xl xl:text-5xl font-semibold leading-[1.1] tracking-tight text-neutral-900 max-w-[22ch]"
             >
-              Built on a Strong{" "}
-              <span className="text-neutral-400">Foundation</span>
+              Management &amp; Consulting{" "}
+              <span className="text-neutral-400">Services</span>
             </motion.h2>
           </div>
 
@@ -136,12 +106,12 @@ export default function Foundation() {
             transition={{ duration: 0.7, ease, delay: 0.2 }}
             className="text-sm text-neutral-400 font-light leading-relaxed max-w-[40ch] xl:text-right"
           >
-            Four pillars that set our consulting approach apart from the rest.
+            UMA&apos;s core professional services — built to deliver Value Added Solutions across every level of your healthcare organization.
           </motion.p>
         </div>
 
         {/* Cards */}
-        <div className="grid xl:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
           {points.map(({ title, body, icon }, i) => (
             <motion.div
               key={title}
