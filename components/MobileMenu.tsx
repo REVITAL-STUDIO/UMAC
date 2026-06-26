@@ -24,7 +24,7 @@ const MobileMenu = () => {
       animate={{ x: "0%", opacity: 1 }}
       exit={{ x: "100%", opacity: 0 }}
       transition={{ duration: 0.45, ease }}
-      className="fixed left-0 top-0 h-full inset-0 z-[999] xl:hidden bg-neutral-950 flex flex-col overflow-hidden"
+      className="fixed left-0 top-0 h-[100dvh] w-full z-[999] xl:hidden bg-neutral-950 flex flex-col overflow-hidden"
     >
       {/* Subtle background texture */}
       <div
@@ -45,7 +45,7 @@ const MobileMenu = () => {
       />
 
       {/* Nav links */}
-      <div className="flex-1 flex flex-col justify-center px-8 pb-8 mt-16">
+      <div className="flex-1 flex flex-col justify-center px-8 pb-8 mt-16 overflow-y-auto">
         <ul className="flex flex-col">
           {links.map(({ href, label }, i) => {
             const isActive = pathname === href;
@@ -99,7 +99,7 @@ const MobileMenu = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease, delay: 0.5 }}
-        className="px-8 pb-12 flex flex-col gap-3 border-t border-white/8 pt-6"
+        className="flex-shrink-0 px-8 pb-[max(3rem,env(safe-area-inset-bottom))] flex flex-col gap-3 border-t border-white/8 pt-6"
       >
         <Link
           href="/contact"
