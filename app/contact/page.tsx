@@ -101,7 +101,7 @@ const details = [
       </svg>
     ),
     label: "Recruiting",
-    value: "recruiting@umallc.com",
+    value: "Terence@umallc.com",
   },
   {
     icon: (

@@ -24,7 +24,7 @@ const links = [
 
 const emails = [
   { label: "General", address: "info@umallc.com" },
-  { label: "Recruiting", address: "recruiting@umallc.com" },
+  { label: "Recruiting", address: "Terence@umallc.com" },
 ];
 
 export default function Footer() {
