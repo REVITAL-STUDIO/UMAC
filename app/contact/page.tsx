@@ -106,6 +106,52 @@ const details = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <rect
+          x="1.5"
+          y="3.5"
+          width="13"
+          height="9"
+          rx="1.5"
+          stroke="currentColor"
+          strokeWidth="1.3"
+        />
+        <path
+          d="M1.5 5.5l6.5 4 6.5-4"
+          stroke="currentColor"
+          strokeWidth="1.3"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+    label: "Sales",
+    value: "sales@umallc.com",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <rect
+          x="1.5"
+          y="3.5"
+          width="13"
+          height="9"
+          rx="1.5"
+          stroke="currentColor"
+          strokeWidth="1.3"
+        />
+        <path
+          d="M1.5 5.5l6.5 4 6.5-4"
+          stroke="currentColor"
+          strokeWidth="1.3"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+    label: "Support",
+    value: "support@umallc.com",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
         <path
           d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.1a.5.5 0 0 1 .47.33l1 2.5a.5.5 0 0 1-.12.54L4.8 6.5a8 8 0 0 0 4.7 4.7l1.13-1.17a.5.5 0 0 1 .54-.12l2.5 1a.5.5 0 0 1 .33.47v1.1A1.5 1.5 0 0 1 12.5 14C6.7 14 2 9.3 2 3.5Z"
           stroke="currentColor"
